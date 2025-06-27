@@ -1,5 +1,6 @@
 import About from "../Components/About";
 import Header from "../Components/Header";
+import Projects from "../Components/Projects";
 import Skills from "../Components/Skills";
 
 const MainLayout = () => {
@@ -8,6 +9,7 @@ const MainLayout = () => {
       <Header></Header>
       <About></About>
       <Skills></Skills>
+      <Projects></Projects>
     </div>
   );
 };

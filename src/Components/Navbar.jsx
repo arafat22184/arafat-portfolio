@@ -23,6 +23,15 @@ const Navbar = () => {
             className="flex items-center gap-2 whitespace-nowrap text-sm sm:text-base"
           >
             <FaTools className="text-base sm:text-lg" />
+            <span>About</span>
+          </a>
+        </li>
+        <li className={liStyle}>
+          <a
+            href="#skills"
+            className="flex items-center gap-2 whitespace-nowrap text-sm sm:text-base"
+          >
+            <FaTools className="text-base sm:text-lg" />
             <span>Skill</span>
           </a>
         </li>
