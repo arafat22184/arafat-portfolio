@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed bottom-4 left-0 right-0 z-50 flex justify-center px-2">
-      <ul className="flex flex-nowrap scrollbar-hide justify-center items-center gap-3 sm:gap-6 bg-slate-600 px-3 sm:px-6 py-3 rounded-2xl shadow-lg max-w-4xl mx-auto">
+      <ul className="flex flex-nowrap scrollbar-hide justify-center items-center gap-3 sm:gap-5 bg-slate-600 px-3 sm:px-4 py-3 rounded-2xl shadow-lg max-w-4xl mx-auto">
         <li className={liStyle}>
           <a
             href="#home"
