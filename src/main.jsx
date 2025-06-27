@@ -5,8 +5,6 @@ import MainLayout from "./Layouts/MainLayout";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <div>
-      <MainLayout></MainLayout>
-    </div>
+    <MainLayout></MainLayout>
   </StrictMode>
 );

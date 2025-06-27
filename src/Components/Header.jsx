@@ -5,10 +5,8 @@ import Banner from "./Banner";
 const Header = () => {
   return (
     <header>
-      <div className="flex justify-center">
-        <Navbar></Navbar>
-        <Banner></Banner>
-      </div>
+      <Navbar></Navbar>
+      <Banner></Banner>
     </header>
   );
 };

@@ -8,7 +8,7 @@ const Banner = () => {
   return (
     <section
       id="home"
-      className="xl:min-w-7xl mx-auto relative flex items-center justify-center px-4 sm:px-8 md:px-16 py-20 bg-[url('https://i.ibb.co/S4Q6wJqd/profile-Image.jpg')] bg-cover bg-center"
+      className="max-w-7xl mx-auto relative flex items-center justify-center px-4 sm:px-8 md:px-16 py-20 bg-[url('https://i.ibb.co/S4Q6wJqd/profile-Image.jpg')] bg-cover bg-center"
     >
       {/* Overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30 backdrop-blur-sm z-0"></div>
