@@ -8,13 +8,13 @@ const Banner = () => {
   return (
     <section
       id="home"
-      className="relative flex items-center justify-center px-4 sm:px-8 md:px-16 py-20 bg-[url('https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center"
+      className="xl:min-w-7xl mx-auto relative flex items-center justify-center px-4 sm:px-8 md:px-16 py-20 bg-[url('https://i.ibb.co/S4Q6wJqd/profile-Image.jpg')] bg-cover bg-center"
     >
       {/* Overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30 backdrop-blur-sm z-0"></div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl w-full flex flex-col-reverse md:flex-row items-center justify-between gap-10">
+      <div className="relative z-10 w-full flex flex-col-reverse md:flex-row items-center justify-between gap-10">
         {/* Left: Text Content */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -28,7 +28,7 @@ const Banner = () => {
               Hi, I’m <span className="text-orange-400">Arafat</span>
             </h1>
 
-            <h2 className="text-lg md:text-2xl font-semibold mb-6">
+            <h2 className="text-lg md:text-xl lg:text-2xl font-semibold mb-6">
               I’m{" "}
               <span className="text-orange-400">
                 <Typewriter
@@ -42,7 +42,7 @@ const Banner = () => {
                   cursorStyle="_"
                   typeSpeed={70}
                   deleteSpeed={50}
-                  delaySpeed={1500}
+                  delaySpeed={2000}
                 />
               </span>
             </h2>
