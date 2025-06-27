@@ -1,5 +1,95 @@
+/* eslint-disable no-unused-vars */
+import { FaArrowRight } from "react-icons/fa";
+import { Typewriter } from "react-simple-typewriter";
+import { motion } from "framer-motion";
+import VerticalSocialIcons from "./VerticalSocialIcons";
+
 const Banner = () => {
-  return <div id="home"></div>;
+  return (
+    <section
+      id="home"
+      className="relative flex items-center justify-center px-4 sm:px-8 md:px-16 py-20 bg-[url('https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center"
+    >
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40 backdrop-blur-sm z-0"></div>
+
+      {/* Content */}
+      <div className="relative z-10 max-w-7xl w-full flex flex-col-reverse md:flex-row items-center justify-between gap-10">
+        {/* Left: Text Content */}
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-white flex-1 text-center md:text-left flex flex-col-reverse md:flex-row gap-2 md:gap-6"
+        >
+          <VerticalSocialIcons></VerticalSocialIcons>
+          <div>
+            <h1 className="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">
+              Hi, I’m <span className="text-orange-400">Arafat</span>
+            </h1>
+
+            <h2 className="text-lg md:text-2xl font-semibold mb-6">
+              I’m{" "}
+              <span className="text-orange-400">
+                <Typewriter
+                  words={[
+                    "a dedicated & passionate",
+                    "Frontend Web Developer",
+                    "UI Enthusiast",
+                  ]}
+                  loop={0}
+                  cursor
+                  cursorStyle="_"
+                  typeSpeed={70}
+                  deleteSpeed={50}
+                  delaySpeed={1500}
+                />
+              </span>
+            </h2>
+
+            <p className="text-slate-300 text-sm md:text-base max-w-xl mb-6 leading-relaxed">
+              Web Development Creating dynamic, user-friendly web applications
+              with a passion for learning and innovation.
+            </p>
+
+            <a
+              href="#projects"
+              className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-400 text-[#0F172A] font-semibold px-6 py-3 rounded-full transition duration-300"
+            >
+              View Projects <FaArrowRight />
+            </a>
+          </div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          className="flex-1 flex justify-center"
+        >
+          <div className="relative w-[288px] h-[346px] mx-auto">
+            {/* Animated Glowing Border Only */}
+            <motion.div
+              className="absolute inset-0 rounded-[32px] border-[10px] border-orange-400 blur-xs opacity-90 z-0"
+              animate={{ scale: [1, 1.03, 1] }}
+              transition={{
+                repeat: Infinity,
+                duration: 3,
+                ease: "linear",
+              }}
+            />
+
+            {/* Static Image */}
+            <img
+              src="https://i.ibb.co/WvMdL5kQ/IMG-5512-removebg-preview.png"
+              alt="Arafat"
+              className="relative w-full h-full object-cover rounded-[32px] border-4 border-orange-400 shadow-2xl z-10"
+            />
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  );
 };
 
 export default Banner;
