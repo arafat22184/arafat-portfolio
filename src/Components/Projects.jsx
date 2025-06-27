@@ -38,12 +38,12 @@ const Projects = () => {
         {projects.map((project) => (
           <div
             key={project.id}
-            className="bg-slate-900 rounded-xl shadow-lg overflow-hidden border border-slate-800 hover:shadow-orange-400/20 transition duration-300"
+            className="bg-slate-900 rounded-xl shadow-lg overflow-hidden border border-slate-500 hover:shadow-orange-400/20 transition duration-300"
           >
             <img
               src={project.image}
               alt={project.name}
-              className="w-full h-48 object-cover"
+              className="w-full h-48 object-cover border-b border-slate-500"
             />
             <div className="p-6 space-y-4">
               <h3 className="text-xl font-semibold text-orange-400">

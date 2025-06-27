@@ -4,9 +4,9 @@ import "./index.css";
 import MainLayout from "./Layouts/MainLayout";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import ProjectLayout from "./Layouts/ProjectLayout";
-import Project3 from "./Components/Projects/Project3";
 import BlogifyDetails from "./Components/Projects/BlogifyDetails";
 import HobbyHubDetails from "./Components/Projects/HobbyHubDetails";
+import JobFinderDetails from "./Components/Projects/JobFinderDetails";
 
 const router = createBrowserRouter([
   {
@@ -27,7 +27,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/project/3",
-        Component: Project3,
+        Component: JobFinderDetails,
       },
     ],
   },

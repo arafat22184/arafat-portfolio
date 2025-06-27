@@ -19,7 +19,7 @@ const Navbar = () => {
         </li>
         <li className={liStyle}>
           <a
-            href="#skills"
+            href="#about"
             className="flex items-center gap-2 whitespace-nowrap text-sm sm:text-base"
           >
             <FaTools className="text-base sm:text-lg" />
