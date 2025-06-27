@@ -1,8 +1,8 @@
 /* eslint-disable no-unused-vars */
-import { FaArrowRight } from "react-icons/fa";
 import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 import VerticalSocialIcons from "./VerticalSocialIcons";
+import { PiReadCvLogoFill } from "react-icons/pi";
 
 const Banner = () => {
   return (
@@ -11,7 +11,7 @@ const Banner = () => {
       className="relative flex items-center justify-center px-4 sm:px-8 md:px-16 py-20 bg-[url('https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center"
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40 backdrop-blur-sm z-0"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30 backdrop-blur-sm z-0"></div>
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl w-full flex flex-col-reverse md:flex-row items-center justify-between gap-10">
@@ -53,10 +53,11 @@ const Banner = () => {
             </p>
 
             <a
-              href="#projects"
-              className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-400 text-[#0F172A] font-semibold px-6 py-3 rounded-full transition duration-300"
+              href="https://drive.google.com/file/d/100fCbn6VLRefm-0kh9p66dkv99WtJvbz/view?usp=sharing"
+              target="_blank"
+              className="inline-flex items-center gap-1 bg-orange-500 hover:bg-orange-400 text-white font-semibold px-6 py-3 rounded-full transition duration-300"
             >
-              View Projects <FaArrowRight />
+              Resume <PiReadCvLogoFill />
             </a>
           </div>
         </motion.div>
