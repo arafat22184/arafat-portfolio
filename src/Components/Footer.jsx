@@ -13,7 +13,7 @@ const icons = [
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-900/70 border-t border-slate-700 py-8 text-white pb-28">
+    <footer className=" bg-slate-900/70 border-t border-slate-700 py-8 text-white pb-28">
       <div className="max-w-7xl mx-auto px-4 flex flex-col items-center justify-between gap-6">
         {/* Logo */}
         <div>

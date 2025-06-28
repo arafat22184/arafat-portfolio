@@ -29,7 +29,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="py-16 px-4 sm:px-8 md:px-16 bg-slate-950 text-white max-w-7xl mx-auto"
+      className="py-16 md:py-18 px-4 sm:px-8 md:px-16 bg-slate-950 text-white max-w-7xl mx-auto"
     >
       {/* Heading */}
       <div className="text-center mb-14">

@@ -22,7 +22,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className=" px-4 sm:px-8 md:px-16 bg-slate-950 text-white max-w-7xl mx-auto"
+      className="pt-16 md:pt-18 px-4 sm:px-8 md:px-16 bg-slate-950 text-white max-w-7xl mx-auto"
     >
       <div className="text-center mb-10">
         <h2 className="text-3xl md:text-5xl font-bold text-orange-400">

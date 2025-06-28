@@ -11,8 +11,12 @@ import {
   FaRocket,
   FaHome,
 } from "react-icons/fa";
+import { useEffect } from "react";
 
 const JobFinderDetails = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const imageUrls = [
     "https://i.ibb.co/pvKfW2mQ/Job-Finder.png",
     "https://i.ibb.co/v4hjS9XB/Job-Finder-Alljobs.png",

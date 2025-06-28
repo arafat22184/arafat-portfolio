@@ -11,8 +11,12 @@ import {
   FaRocket,
   FaHome,
 } from "react-icons/fa";
+import { useEffect } from "react";
 
 const BlogifyDetails = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const imageUrls = [
     "https://i.ibb.co/mrwt2Lfn/1.png",
     "https://i.ibb.co/mCWXKRcF/2.png",

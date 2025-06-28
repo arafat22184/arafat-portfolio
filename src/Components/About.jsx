@@ -1,15 +1,14 @@
 /* eslint-disable no-unused-vars */
-import Lottie from "lottie-react";
 import { motion } from "framer-motion";
-import aboutAnimation from "../assets/lottie_animation/about.json";
+import developerImage from "../assets/undraw_hello_ccwj.svg";
 
 const About = () => {
   return (
     <section
       id="about"
-      className="py-16 md:py-18 px-4 sm:px-8 md:px-16 bg-slate-950 text-white max-w-7xl mx-auto"
+      className="pt-16 md:pt-18 px-4 sm:px-8 md:px-16 bg-slate-950 text-white max-w-7xl mx-auto"
     >
-      {/* Section Heading */}
+      {/* Heading */}
       <motion.div
         className="text-center mb-4"
         initial={{ opacity: 0, y: -40 }}
@@ -25,22 +24,29 @@ const About = () => {
         </p>
       </motion.div>
 
-      {/* Main Content */}
-      <div className="flex flex-col lg:flex-row items-center gap-6 xl:gap-14">
-        {/* Lottie Animation */}
+      {/* Content */}
+      <div className="flex flex-col lg:flex-row items-stretch gap-6 xl:gap-14">
+        {/* Developer Image */}
         <motion.div
-          className="flex-1 max-w-[325px] border-4 border-orange-400 rounded-3xl p-4 bg-slate-900 shadow-lg"
+          className="flex-1 lg:flex-3/8 border-4 border-orange-400 rounded-3xl p-4 bg-slate-900 shadow-lg min-h-[300px] lg:h-auto"
           initial={{ opacity: 0, x: -60 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <Lottie animationData={aboutAnimation} loop={true} />
+          <div className="h-full w-full flex items-center justify-center">
+            <img
+              src={developerImage}
+              alt="Developer Illustration"
+              className="object-contain h-full w-full max-h-full max-w-full"
+              loading="lazy"
+            />
+          </div>
         </motion.div>
 
         {/* About Text */}
         <motion.div
-          className="flex-1 bg-gradient-to-br from-slate-800/80 to-slate-900/70 rounded-3xl p-8 text-slate-200 text-lg leading-relaxed space-y-6 shadow-xl backdrop-blur-sm"
+          className="flex-1 lg:flex-5/8 bg-gradient-to-br from-slate-800/80 to-slate-900/70 rounded-3xl p-8 text-slate-200 text-lg leading-relaxed space-y-6 shadow-xl backdrop-blur-sm"
           initial={{ opacity: 0, x: 60 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
@@ -57,7 +63,6 @@ const About = () => {
             <span className="font-semibold text-white">TailwindCSS</span>, and{" "}
             <span className="font-semibold text-white">JavaScript</span>.
           </p>
-
           <p>
             I specialize in building responsive and dynamic web applications
             using <span className="font-semibold text-white">React.js</span>. I
@@ -67,7 +72,6 @@ const About = () => {
             backend and databases, and love integrating APIs to bring products
             to life.
           </p>
-
           <p>
             I thrive in fast-paced, creative environments and continuously seek
             to improve my skills. My mission is to create{" "}

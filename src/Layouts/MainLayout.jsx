@@ -5,8 +5,12 @@ import Header from "../Components/Header";
 import Projects from "../Components/Projects";
 import Skills from "../Components/Skills";
 import Footer from "../Components/Footer";
+import { useEffect } from "react";
 
 const MainLayout = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <Header></Header>

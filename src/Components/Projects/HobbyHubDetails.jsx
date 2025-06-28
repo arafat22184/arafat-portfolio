@@ -11,8 +11,13 @@ import {
   FaRocket,
   FaHome,
 } from "react-icons/fa";
+import { useEffect } from "react";
 
 const HobbyHubDetails = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const imageUrls = [
     "https://i.ibb.co/5WYKsBqx/HobbyHub.png",
     "https://i.ibb.co/hxR8cNgz/Hobby-Hub-All-Groups.png",
