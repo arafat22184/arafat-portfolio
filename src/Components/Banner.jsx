@@ -29,13 +29,13 @@ const Banner = () => {
             </h1>
 
             <h2 className="text-lg md:text-xl lg:text-2xl font-semibold mb-6">
-              I’m{" "}
+              I am{" "}
               <span className="text-orange-400">
                 <Typewriter
                   words={[
-                    "a dedicated & passionate",
                     "Frontend Web Developer",
-                    "UI Enthusiast",
+                    "MERN Stack Developer",
+                    "Creating Clean & Interactive UIs",
                   ]}
                   loop={0}
                   cursor
