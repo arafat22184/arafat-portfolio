@@ -4,6 +4,7 @@ import Contact from "../Components/Contact";
 import Header from "../Components/Header";
 import Projects from "../Components/Projects";
 import Skills from "../Components/Skills";
+import Footer from "../Components/Footer";
 
 const MainLayout = () => {
   return (
@@ -13,7 +14,7 @@ const MainLayout = () => {
       <Skills></Skills>
       <Projects></Projects>
       <Contact></Contact>
-
+      <Footer></Footer>
       <ToastContainer
         position="top-right"
         autoClose={5000}
